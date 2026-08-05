@@ -5,7 +5,7 @@ import (
 	"errors"
 
 	"github.com/dal-go/dalgo/dal"
-	"github.com/sneat-co/template/backend/models4template"
+	"github.com/sneat-co/circleus/backend/models4template"
 )
 
 // Facade carries the injected database and ports for this extension's
