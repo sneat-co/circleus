@@ -1,17 +1,23 @@
-# sneat-ext-template
+# Circleus
 
-Starter implementation repository for a Sneat extension. It contains an Nx
-workspace, Angular/Ionic app, and one host-facing runtime package.
+Circleus is the reusable Circles extension for independent group Spaces,
+linked-Space workflows, and Circle-specific presentation across family, team,
+and community contexts. This active implementation workspace is still partly
+scaffold-derived; the Circleus feature is currently in Draft, with the paired
+public contract in [`ext-circleus`](https://github.com/sneat-co/ext-circleus).
 
 ## Repository model
 
-- `<id>` owns the implementation app and `@sneat/extension-<id>` runtime.
-- `ext-<id>` owns the public `@sneat/extension-<id>-contract` package.
+- `circleus` owns the implementation app and runtime.
+- `ext-circleus` owns the public Circleus contract package.
 
 The implementation never copies contract source. It consumes the published
 contract package just as another extension would.
 
-## Layout
+## Current scaffold layout
+
+The repository has not yet completed its template-to-Circleus rename, so some
+paths and package names below still use `template`:
 
 ```text
 apps/
@@ -23,9 +29,9 @@ landings/               # Astro marketing site (see landings/README.md)
 backend/                # Go domain module (see backend/README.md)
 ```
 
-The corresponding [`sneat-ext-contract-template`](../sneat-ext-contract-template)
-repository owns
-`@sneat/extension-template-contract`.
+The corresponding
+[`ext-circleus`](https://github.com/sneat-co/ext-circleus) repository owns the
+public Circleus contract package.
 
 ## Backend
 
@@ -64,17 +70,8 @@ Extension libraries use contract tokens; only the app composition root imports a
 different extension's runtime package. Reusable components deserve a separate
 `@sneat/extension-<id>-ui` package only when another extension needs them.
 
-## Create a new extension
+## Develop
 
-Clone this repository as `<id>`, rename `template` with `./customize.sh <id>`,
-and create a paired `ext-<id>` repository from `sneat-ext-contract-template`. Publish the
-contract first, update the implementation's dependency range, then build:
-
-```sh
-pnpm install
-pnpm exec nx run-many -t lint test build
-(cd backend && go build ./... && go test ./...)
-```
-
-See the [extension standards](https://github.com/sneat-co/sneat-libs/tree/main/docs/extension-standards)
+This is a product implementation repository, not a template to clone. Use the
+existing workspace scripts and the [extension standards](https://github.com/sneat-co/sneat-libs/tree/main/docs/extension-standards)
 for dependency rules and release sequencing.
