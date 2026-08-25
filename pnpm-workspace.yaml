@@ -6,6 +6,13 @@
 # app resolves for @angular/core ($-ref, so it tracks the framework automatically
 # and needs no maintenance on Angular bumps) — collapsing to one @angular/core.
 overrides:
+  # The app is zoneless (no zone.js devDependency, no provideZoneChangeDetection
+  # anywhere). @angular/core, @ionic/angular, and @analogjs/vitest-angular all
+  # still list zone.js as an OPTIONAL peer, and pnpm's default peer-resolution
+  # eagerly satisfies optional peers whenever a compatible version is
+  # resolvable — so it keeps getting pulled back in on every `pnpm install`
+  # even with no direct dependency on it. `-` tells pnpm to never resolve it.
+  'zone.js': '-'
   '@angular-devkit/core': 22.1.5
   '@angular-devkit/schematics': 22.1.5
   '@angular/router': 22.1.3
