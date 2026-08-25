@@ -22,9 +22,15 @@ export default defineConfig({
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
   },
-  /* Run your local dev server before starting the tests */
+  /* Serve the production AOT build rather than the Vite dev server. The dev
+   * server's optimizeDeps pre-bundling doesn't run the Angular Linker over
+   * @angular/common's partially-compiled Ivy chunks under pnpm's node_modules
+   * layout (a known upstream @angular/build/Vite issue — see
+   * angular/angular-cli#30385), throwing "needs to be compiled using the JIT
+   * compiler" at runtime. The AOT production build sidesteps it entirely and
+   * is the more faithful target for a smoke e2e anyway. */
   webServer: {
-    command: 'pnpm exec nx run template-app:serve',
+    command: 'pnpm exec nx run template-app:serve-static',
     url: 'http://localhost:4200',
     reuseExistingServer: true,
     cwd: workspaceRoot,
