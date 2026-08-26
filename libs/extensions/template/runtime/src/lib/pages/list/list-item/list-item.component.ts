@@ -29,9 +29,9 @@ import {
   IListContext,
   IListItemBrief,
   IListItemIDsRequest,
-  ITemplateService,
+  ICircleusService,
   ISetListItemsIsComplete,
-} from '@sneat/extension-template-contract';
+} from '@sneat/extension-circleus-contract';
 import { TemplateComponentBaseParams } from '../../../template-component-base-params';
 import { ListDialogsService } from '../../dialogs/ListDialogs.service';
 import { IListItemWithUiState } from '../list-item-with-ui-state';
@@ -92,7 +92,7 @@ export class ListItemComponent {
     () => this.$listItemWithUiState().brief,
   );
 
-  private get listService(): ITemplateService {
+  private get listService(): ICircleusService {
     return this.params.listService;
   }
 

@@ -7,7 +7,7 @@ export * from './list.service';
 // export * from './template-db.service';
 
 // import { Provider } from '@angular/core';
-// import { IListItemService, IListService, ITemplateService } from '../services';
+// import { IListItemService, IListService, ICircleusService } from '../services';
 // import { ListItemService } from './list-item.service';
 // import { ListService } from './list.service';
 // import {
@@ -20,5 +20,5 @@ export * from './list.service';
 // 	// { provide: IListItemService, useClass: ListItemService },
 // 	// { provide: IListService, useClass: ListService },
 // 	{ provide: ITemplateAppStateService, useClass: TemplateAppStateService },
-// 	// { provide: ITemplateService, useClass: TemplateDbService },
+// 	// { provide: ICircleusService, useClass: TemplateDbService },
 // ];

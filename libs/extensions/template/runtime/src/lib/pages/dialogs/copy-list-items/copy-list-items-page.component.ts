@@ -26,10 +26,10 @@ import {
 import {
   IListInfo,
   IListItemBrief,
-  ITemplateService,
-  TEMPLATE_SERVICE,
+  ICircleusService,
+  CIRCLEUS_SERVICE,
   ListType,
-} from '@sneat/extension-template-contract';
+} from '@sneat/extension-circleus-contract';
 import { ErrorLogger, IErrorLogger } from '@sneat/core';
 
 @Component({
@@ -55,7 +55,7 @@ import { ErrorLogger, IErrorLogger } from '@sneat/core';
 export class CopyListItemsPageComponent implements OnInit {
   private readonly errorLogger = inject<IErrorLogger>(ErrorLogger);
   private readonly toastCrl = inject(ToastController);
-  private readonly listService = inject<ITemplateService>(TEMPLATE_SERVICE);
+  private readonly listService = inject<ICircleusService>(CIRCLEUS_SERVICE);
 
   @Input() modal?: ModalController;
   @Input() from?: IListInfo;

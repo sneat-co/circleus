@@ -29,7 +29,7 @@ import { SpaceServiceModule } from '@sneat/space-services';
 import { zipMapBriefsWithIDs } from '@sneat/space-models';
 import { ClassName } from '@sneat/ui';
 import { takeUntil } from 'rxjs/operators';
-import { IListGroup, ITemplateSpaceDbo } from '@sneat/extension-template-contract';
+import { IListGroup, ICircleusSpaceDbo } from '@sneat/extension-circleus-contract';
 import { builtInListGroups } from '../pages/lists/built-in-lists';
 
 // template-specific side menu rendered in the space "menu" outlet. Unlike the
@@ -101,7 +101,7 @@ export class TemplateSpaceMenuComponent extends SpaceBaseComponent {
     const groups: IListGroup[] = this.space
       ? [...builtInListGroups(this.space.type)]
       : [];
-    const dbo = this.space?.dbo as unknown as ITemplateSpaceDbo | undefined;
+    const dbo = this.space?.dbo as unknown as ICircleusSpaceDbo | undefined;
     (dbo?.listGroups || []).forEach((g) => {
       if (!groups.some((x) => x.type === g.type)) {
         groups.push(g);

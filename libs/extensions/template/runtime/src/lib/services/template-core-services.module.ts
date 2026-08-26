@@ -5,7 +5,7 @@ import {
 } from './template-app-state.service';
 
 // Provides the template UI-state service. The concrete ListService is no longer
-// provided here — it is bound to the TEMPLATE_SERVICE contract token by
+// provided here — it is bound to the CIRCLEUS_SERVICE contract token by
 // provideTemplate() at app bootstrap (the app is the composition root).
 @NgModule({
   providers: [

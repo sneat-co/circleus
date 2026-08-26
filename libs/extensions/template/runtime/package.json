@@ -25,7 +25,7 @@
     "@sneat/space-models": "^0.27.0",
     "@sneat/space-services": "^0.27.0",
     "@sneat/ui": "^0.27.0",
-    "@sneat/extension-template-contract": "^0.1.0",
+    "@sneat/extension-circleus-contract": "^0.1.1",
     "vitest": "^4.0.9"
   },
   "sideEffects": false

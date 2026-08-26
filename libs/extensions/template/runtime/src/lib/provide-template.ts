@@ -1,5 +1,5 @@
 import { Provider } from '@angular/core';
-import { TEMPLATE_SERVICE } from '@sneat/extension-template-contract';
+import { CIRCLEUS_SERVICE } from '@sneat/extension-circleus-contract';
 import { ListService } from './services';
 
 // The extension's single root register function: binds EVERY always-on contract
@@ -14,5 +14,5 @@ import { ListService } from './services';
 // README "Wiring extension services (DI)" section and the frontend-apps standard:
 // https://github.com/sneat-co/sneat-libs/blob/main/docs/extension-standards/frontend-apps.md
 export function provideTemplate(): Provider[] {
-  return [ListService, { provide: TEMPLATE_SERVICE, useExisting: ListService }];
+  return [ListService, { provide: CIRCLEUS_SERVICE, useExisting: ListService }];
 }

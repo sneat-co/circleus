@@ -1,5 +1,5 @@
 import { SpaceType } from '@sneat/core';
-import { IListGroup } from '@sneat/extension-template-contract';
+import { IListGroup } from '@sneat/extension-circleus-contract';
 
 // Built-in default list groups shown for a space, for instant UX before/alongside
 // the lists persisted on the space DBO. Personal and family spaces both

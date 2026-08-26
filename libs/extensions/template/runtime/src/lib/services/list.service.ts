@@ -23,7 +23,7 @@ import {
   IListItemsCommandParams,
   IReorderListItemsRequest,
   ISetListItemsIsComplete,
-} from '@sneat/extension-template-contract';
+} from '@sneat/extension-circleus-contract';
 
 @Injectable()
 export class ListService extends ModuleSpaceItemService<IListBrief, IListDbo> {
