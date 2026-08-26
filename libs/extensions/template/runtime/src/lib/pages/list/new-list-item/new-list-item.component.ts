@@ -21,9 +21,9 @@ import { ISpaceContext } from '@sneat/space-models';
 import {
   IListContext,
   ICreateListItemRequest,
-  ITemplateService,
-  TEMPLATE_SERVICE,
-} from '@sneat/extension-template-contract';
+  ICircleusService,
+  CIRCLEUS_SERVICE,
+} from '@sneat/extension-circleus-contract';
 import { EmojisLoaderService } from '../../../services';
 import { IListItemWithUiState } from '../list-item-with-ui-state';
 
@@ -37,7 +37,7 @@ export class NewListItemComponent {
   private readonly errorLogger = inject<IErrorLogger>(ErrorLogger);
   private readonly randomService = inject(RandomIdService);
   private readonly toastCtrl = inject(ToastController);
-  private readonly listService = inject<ITemplateService>(TEMPLATE_SERVICE);
+  private readonly listService = inject<ICircleusService>(CIRCLEUS_SERVICE);
   private readonly emojisLoader = inject(EmojisLoaderService);
 
   protected readonly isFocused = signal(false);

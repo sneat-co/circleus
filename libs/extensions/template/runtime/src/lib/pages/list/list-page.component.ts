@@ -48,7 +48,7 @@ import {
   IDeleteListItemsRequest,
   IReorderListItemsRequest,
   ISetListItemsIsComplete,
-} from '@sneat/extension-template-contract';
+} from '@sneat/extension-circleus-contract';
 import { takeUntil } from 'rxjs';
 import { TemplateComponentBaseParams } from '../../template-component-base-params';
 import { ITemplateAppStateService } from '../../services';

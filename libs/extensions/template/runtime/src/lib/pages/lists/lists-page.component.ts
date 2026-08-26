@@ -36,9 +36,9 @@ import { SpaceServiceModule } from '@sneat/space-services';
 import {
   IListGroup,
   IListInfo,
-  ITemplateSpaceDbo,
+  ICircleusSpaceDbo,
   ListType,
-} from '@sneat/extension-template-contract';
+} from '@sneat/extension-circleus-contract';
 import { builtInListGroups } from './built-in-lists';
 import {
   SpaceBaseComponent,
@@ -353,7 +353,7 @@ export class ListsPageComponent extends SpaceBaseComponent {
           this.listGroups = [];
           this.updateListsFromSpace(undefined); // built-in defaults (family)
           const templateDbo = this.space.dbo as unknown as
-            | ITemplateSpaceDbo
+            | ICircleusSpaceDbo
             | undefined;
           this.updateListsFromSpace(templateDbo?.listGroups); // persisted lists
         }

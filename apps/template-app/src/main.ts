@@ -18,7 +18,7 @@ import { registerIonicons } from './register-ionicons';
 bootstrapApplication(App, {
   providers: [
     ...getStandardSneatProviders(templateAppEnvironmentConfig),
-    // Bind the template contract token (TEMPLATE_SERVICE) to its concrete
+    // Bind the template contract token (CIRCLEUS_SERVICE) to its concrete
     // implementation. The app is the composition root and may wire the runtime.
     ...provideContactus(),
     ...provideTemplate(),

@@ -9,7 +9,7 @@ import {
   IListContext,
   IListDbo,
   ListType,
-} from '@sneat/extension-template-contract';
+} from '@sneat/extension-circleus-contract';
 import { TemplateComponentBaseParams } from '../template-component-base-params';
 
 export abstract class BaseListPage extends SpaceItemPageBaseComponent<
