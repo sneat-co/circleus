@@ -3,13 +3,18 @@
 Circleus is the reusable Circles extension for independent group Spaces,
 linked-Space workflows, and Circle-specific presentation across family, team,
 and community contexts. This active implementation workspace is still partly
-scaffold-derived; the Circleus feature is currently in Draft, with the paired
-public contract in [`ext-circleus`](https://github.com/sneat-co/ext-circleus).
+scaffold-derived; the Circleus feature is currently in Draft, with its public
+contract published from
+[`sneat-ext-contracts`](https://github.com/sneat-co/sneat-ext-contracts)
+(`libs/circleus`).
 
 ## Repository model
 
 - `circleus` owns the implementation app and runtime.
-- `ext-circleus` owns the public Circleus contract package.
+- [`sneat-ext-contracts`](https://github.com/sneat-co/sneat-ext-contracts)
+  (`libs/circleus`) owns the public Circleus contract package, published as
+  `@sneat/extension-circleus-contract`. The former `ext-circleus` repository
+  is archived.
 
 The implementation never copies contract source. It consumes the published
 contract package just as another extension would.
@@ -29,9 +34,10 @@ landings/               # Astro marketing site (see landings/README.md)
 backend/                # Go domain module (see backend/README.md)
 ```
 
-The corresponding
-[`ext-circleus`](https://github.com/sneat-co/ext-circleus) repository owns the
-public Circleus contract package.
+The public Circleus contract package —
+`@sneat/extension-circleus-contract` — now publishes from
+[`sneat-ext-contracts`](https://github.com/sneat-co/sneat-ext-contracts)
+(`libs/circleus`); the former `ext-circleus` repository is archived.
 
 ## Backend
 
