@@ -1,0 +1,21 @@
+name: Frontend CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: frontend-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  frontend:
+    name: lint · test · build
+    uses: sneat-co/cicd/.github/workflows/nx-ci.yml@main
+    with:
+      working-directory: "."
+      targets: "lint test build"
