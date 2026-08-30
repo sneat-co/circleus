@@ -9,7 +9,7 @@ import {
 import type { SneatApp } from '@sneat/core';
 import { authRoutes } from '@sneat/auth-ui';
 import { provideContactus } from '@sneat/extension-contactus';
-import { provideTemplate } from '@sneat/extension-template';
+import { provideTemplate } from '@sneat/extension-circleus';
 import { App } from './app/app';
 import { appRoutes } from './app/app.routes';
 import { templateAppEnvironmentConfig } from './environments/environment';

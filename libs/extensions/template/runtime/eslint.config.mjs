@@ -16,7 +16,7 @@ export default [
           ignoredDependencies: [
             'vitest',
             '@sneat/extension-contactus-ui',
-            '@sneat/extension-template-contract',
+            '@sneat/extension-circleus-contract',
           ],
           ignoredFiles: [
             '{projectRoot}/eslint.config.{js,cjs,mjs,ts,cts,mts}',

@@ -1,20 +1,22 @@
 # AI agent guidance
 
-This is a **Sneat extension product/app repo template**. It scaffolds the
-`<id>` implementation/app repo, not the public `ext-<id>` definition repo.
+This is the **Circleus product/app implementation repo**. It owns the app and
+`@sneat/extension-circleus` runtime; some source paths and symbols remain
+scaffold-derived.
 
 Use the current Sneat repo split:
 
 - `<id>`: product / implementation / app repo.
 - `ext-<id>`: public extension-definition repo with `typespec/`, `backend/`,
   and `frontend/`.
-- `@sneat/extension-<id>-contract`: the frontend package published from
-  `ext-<id>/frontend`.
+- `@sneat/extension-circleus-contract`: the frontend contract published from
+  `sneat-ext-contracts/libs/circleus`.
 
-The local `libs/extensions/<id>/contract` package is a starter public surface.
-For extensions with cross-repo consumers, move or publish that surface from
-`ext-<id>/frontend` as `@sneat/extension-<id>-contract` and keep
-implementation internals in `<id>`.
+Do not publish or consume this runtime as `@sneat/extension-template`; that
+identity belongs to `sneat-ext-template`. Keep Circleus implementation
+internals here and consume the published Circleus contract.
+The `@sneat/extension-circleus` runtime is workspace-private and must not be
+published to npm.
 
 Build against the shared platform standards.
 
