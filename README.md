@@ -39,6 +39,9 @@ The public Circleus contract package —
 [`sneat-ext-contracts`](https://github.com/sneat-co/sneat-ext-contracts)
 (`libs/circleus`); the former `ext-circleus` repository is archived.
 
+The `@sneat/extension-circleus` runtime is workspace-private. It is built for
+the Circleus app and is not an npm release target.
+
 ## Backend
 
 `backend/` is a Go domain module (`github.com/sneat-co/template/backend`) built

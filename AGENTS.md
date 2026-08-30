@@ -15,6 +15,8 @@ Use the current Sneat repo split:
 Do not publish or consume this runtime as `@sneat/extension-template`; that
 identity belongs to `sneat-ext-template`. Keep Circleus implementation
 internals here and consume the published Circleus contract.
+The `@sneat/extension-circleus` runtime is workspace-private and must not be
+published to npm.
 
 Build against the shared platform standards.
 

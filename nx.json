@@ -91,18 +91,6 @@
       ]
     }
   },
-  "release": {
-    "projects": [
-      "ext-template-runtime"
-    ],
-    "projectsRelationship": "fixed",
-    "docker": {
-      "skipVersionActions": true
-    },
-    "version": {
-      "preVersionCommand": "pnpm dlx nx run-many -t build"
-    }
-  },
   "plugins": [
     {
       "plugin": "@nx/playwright/plugin",

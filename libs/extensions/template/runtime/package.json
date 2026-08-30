@@ -1,9 +1,7 @@
 {
   "name": "@sneat/extension-circleus",
   "version": "0.1.0",
-  "publishConfig": {
-    "access": "public"
-  },
+  "private": true,
   "peerDependencies": {
     "@angular/common": ">=22.0.0 <23.0.0",
     "@angular/core": ">=22.0.0 <23.0.0",
