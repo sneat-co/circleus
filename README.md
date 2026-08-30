@@ -29,7 +29,7 @@ apps/
   template-app/        # Ionic composition root
   template-app-e2e/    # Playwright harness
 libs/extensions/template/
-  runtime/             # @sneat/extension-template
+  runtime/             # @sneat/extension-circleus
 landings/               # Astro marketing site (see landings/README.md)
 backend/                # Go domain module (see backend/README.md)
 ```
@@ -65,7 +65,7 @@ export concrete services, pages, or components for other extension libraries to
 consume.
 
 ```ts
-import { provideTemplate, templateSpaceRoutes } from '@sneat/extension-template';
+import { provideTemplate, templateSpaceRoutes } from '@sneat/extension-circleus';
 
 bootstrapApplication(App, {
   providers: [...provideTemplate(), provideRouter(templateSpaceRoutes)],

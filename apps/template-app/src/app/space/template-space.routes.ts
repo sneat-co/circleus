@@ -1,1 +1,1 @@
-export { templateSpaceRoutes } from '@sneat/extension-template';
+export { templateSpaceRoutes } from '@sneat/extension-circleus';
