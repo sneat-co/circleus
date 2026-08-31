@@ -48,7 +48,7 @@
     "@sneat/wormhole": "^0.0.6",
     "angularx-qrcode": "22.0.1",
     "date-fns": "4.4.0",
-    "express": "^4.22.2",
+    "express": "^5.0.0",
     "firebase": "12.17.1",
     "ionicons": "^8.0.13",
     "rxjs": "~7.8.2"
@@ -94,7 +94,7 @@
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-playwright": "^2.0.0",
     "jiti": "2.7.0",
-    "jsdom": "~22.1.0",
+    "jsdom": "~30.0.0",
     "jsonc-eslint-parser": "^3.0.0",
     "ng-packagr": "22.1.1",
     "nx": "23.1.1",
@@ -106,8 +106,8 @@
     "typescript": "6.0.3",
     "typescript-eslint": "^8.63.0",
     "verdaccio": "^6.7.4",
-    "vite": "^7.3.6",
-    "vite-tsconfig-paths": "^5.1.4",
+    "vite": "^8.0.0",
+    "vite-tsconfig-paths": "^6.0.0",
     "vitest": "4.1.10"
   },
   "nx": {
