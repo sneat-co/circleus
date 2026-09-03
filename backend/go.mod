@@ -5,7 +5,7 @@ go 1.27.0
 require (
 	github.com/dal-go/dalgo v0.74.1
 	github.com/dal-go/record v0.1.3
-	github.com/sneat-co/sneat-go-core v0.67.2
+	github.com/sneat-co/sneat-go-core v0.67.4
 )
 
 require (
