@@ -14,7 +14,7 @@
     "@sneat/auth-core": "^0.27.0",
     "@sneat/auth-models": "^0.27.0",
     "@sneat/auth-ui": "^0.27.0",
-    "@sneat/extension-contactus-ui": "0.14.10",
+    "@sneat/extension-contactus-ui": "0.14.12",
     "@sneat/api": "^0.27.0",
     "@sneat/core": "^0.27.0",
     "@sneat/dto": "^0.27.0",
