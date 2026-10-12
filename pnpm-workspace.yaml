@@ -67,6 +67,7 @@ overrides:
   'undici@8': ^8.11.2
   uuid: '>=11.1.1'
   webpack-dev-server: '>=5.2.5'
+  'svgo@4': ^4.1.0
 # Bound workspace-member discovery to the real source packages (root + libs).
 # Without this, pnpm globs every package.json — including dist/ build copies —
 # so `pnpm install` after a build fails with ERR_PNPM_OUTDATED_LOCKFILE.
