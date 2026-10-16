@@ -8,25 +8,13 @@ name: Deploy landings + app (Cloudflare)
 # Auth is org-level: CLOUDFLARE_API_TOKEN org secret + CLOUDFLARE_ACCOUNT_ID
 # org variable (an identifier, not a secret). No per-repo secrets needed.
 #
-# Deploys on push to main when the app, landing or extension libs change, plus
-# manual dispatch for on-demand redeploys.
-#
-# This repo deploys itself as its own live demo (ext-template.sneat.dev), under
-# wrangler.demo.jsonc — a config separate from the fork-facing wrangler.jsonc,
-# so the demo's own worker name never collides with wrangler.jsonc's `name:
-# "template"` placeholder that customize.sh renames per fork. customize.sh
-# strips the `wrangler-config` line below (and deletes wrangler.demo.jsonc)
-# during scaffolding, so a fork deploys via the plain default wrangler.jsonc
-# instead and previews on workers.dev until it sets up its own apex.
+# MANUAL ONLY (workflow_dispatch). Creating this Worker consumes a slot on the
+# Cloudflare Free plan (100 Workers); deploy deliberately. It deploys landings/wrangler.jsonc
+# (worker `circleus`). This workflow previously copied the template repo's
+# demo config (wrangler.demo.jsonc, worker ext-template-sneat-dev) and would have
+# overwritten the template's live demo on every push; that config is removed.
 on:
   workflow_dispatch:
-  push:
-    branches: [main]
-    paths:
-      - landings/**
-      - apps/**
-      - libs/**
-      - .github/workflows/deploy-landings.yml
 
 concurrency:
   group: deploy-landings-${{ github.ref }}
@@ -42,7 +30,6 @@ jobs:
       # don't inherit repo variables, so they fall back to the example.com
       # placeholder until they set their own.
       build-command: PUBLIC_SITE_URL='${{ vars.PUBLIC_SITE_URL }}' pnpm build
-      wrangler-config: wrangler.demo.jsonc
       cloudflare-account-id: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
       extra-install-directory: "."
     secrets:

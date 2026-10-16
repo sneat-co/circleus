@@ -1,7 +1,9 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
-  // `template` is renamed to your extension id by ./customize.sh.
-  "name": "template",
+  // Creating this Worker consumes a slot on the Cloudflare Free plan (100
+  // Workers); deploy deliberately via the workflow_dispatch-only
+  // deploy-landings.yml. Never use `template` as a name.
+  "name": "circleus",
   "compatibility_date": "2026-06-23",
   "workers_dev": true,
   // Edge router: reserved public paths -> landing; everything else -> the
