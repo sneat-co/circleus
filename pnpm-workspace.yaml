@@ -35,6 +35,7 @@ overrides:
   '@sneat/extension-calendarius-contract': 0.27.8
   '@sneat/extension-calendarius-internal': 0.27.2
   '@sneat/extension-calendarius-shared': 0.27.2
+  '@sneat/extension-media-contract': 0.1.1
   '@sneat/grid': 0.27.41
   '@sneat/logging': 0.27.41
   '@sneat/space-components': 0.27.41

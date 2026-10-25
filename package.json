@@ -34,6 +34,7 @@
     "@sneat/extension-contactus-contract": "0.12.11",
     "@sneat/extension-contactus": "0.14.20",
     "@sneat/extension-contactus-ui": "0.14.20",
+    "@sneat/extension-media-contract": "0.1.1",
     "@sneat/extension-circleus": "workspace:*",
     "@sneat/extension-circleus-contract": "^0.1.2",
     "@sneat/grid": "0.27.41",
