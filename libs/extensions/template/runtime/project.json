@@ -33,8 +33,5 @@
         "runnerConfig": "libs/extensions/template/runtime/vitest.config.ts"
       }
     },
-    "lint": {
-      "executor": "@nx/eslint:lint"
-    }
   }
 }
