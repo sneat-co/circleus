@@ -18,7 +18,6 @@ export default defineConfig({
     isolate: true,
     environment: 'jsdom',
     environmentOptions: { jsdom: { url: 'http://localhost/' } },
-    dangerouslyIgnoreUnhandledErrors: true,
     server: { deps: { inline: [/@ionic/, /ionicons/, /@sneat/] } },
     deps: {
       optimizer: {
