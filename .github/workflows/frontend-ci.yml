@@ -18,4 +18,6 @@ jobs:
     uses: sneat-co/cicd/.github/workflows/nx-ci.yml@main
     with:
       working-directory: "."
+      extra-install-directory: "landings"
+      node-version: "24"
       targets: "lint test build"
