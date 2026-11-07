@@ -3,9 +3,9 @@ module github.com/sneat-co/circleus/backend
 go 1.27.0
 
 require (
-	github.com/dal-go/dalgo v0.97.1
+	github.com/dal-go/dalgo v0.102.0
 	github.com/dal-go/record v0.1.5
-	github.com/sneat-co/sneat-go-core v0.77.1
+	github.com/sneat-co/sneat-go-core v0.77.3
 )
 
 require (
