@@ -30,7 +30,7 @@
     "@sneat/datagrid": "0.27.51",
     "@sneat/dto": "0.27.51",
     "@sneat/ext-assetus-components": "0.11.0",
-    "@sneat/extension-calendarius-contract": "0.27.8",
+    "@sneat/extension-calendarius-contract": "0.28.0",
     "@sneat/extension-contactus-contract": "0.12.13",
     "@sneat/extension-contactus": "0.14.20",
     "@sneat/extension-contactus-ui": "0.14.20",
