@@ -2,6 +2,7 @@ packages:
   - .
 
 overrides:
+  '@emnapi/runtime': 1.11.3
   'undici@7': ^8.0.0
   'undici@8': ^8.11.2
 
