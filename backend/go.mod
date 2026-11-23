@@ -3,7 +3,7 @@ module github.com/sneat-co/circleus/backend
 go 1.27.0
 
 require (
-	github.com/dal-go/dalgo v0.102.4
+	github.com/dal-go/dalgo v0.102.6
 	github.com/dal-go/record v0.1.5
 	github.com/sneat-co/sneat-go-core v0.81.1
 )
@@ -15,7 +15,7 @@ require (
 	github.com/strongo/analytics v0.2.12 // indirect
 	github.com/strongo/logus v0.4.8 // indirect
 	github.com/strongo/random v0.0.3 // indirect
-	github.com/strongo/validation v0.0.17 // indirect
+	github.com/strongo/validation v0.0.18 // indirect
 	golang.org/x/sys v0.30.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
